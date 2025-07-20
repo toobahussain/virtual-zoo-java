@@ -1,0 +1,38 @@
+public class Dolphin extends Animal implements Swim{
+    private String ColorOfDolphin;
+    private int SwimmingSpeed;
+    public Dolphin(){
+        super("Dolphin");
+    }
+
+    public String getColorOfDolphin() {
+        return ColorOfDolphin;
+    }
+
+    public void setColorOfDolphin(String colorOfDolphin) {
+        ColorOfDolphin = colorOfDolphin;
+    }
+
+    public int getSwimmingSpeed() {
+        return SwimmingSpeed;
+    }
+
+    public void setSwimmingSpeed(int swimmingSpeed) {
+        SwimmingSpeed = swimmingSpeed;
+    }
+
+    @Override
+    public void eatingFood() {
+        System.out.println("Dolphin:I  am eating delicious fish");
+    }
+
+    @Override
+    public void eatingCompleted() {
+        System.out.println("I have eaten fish");
+    }
+
+    @Override
+    public void swimming() {
+        System.out.println("Dolphin: I am swimming at the speed of " + getSwimmingSpeed() + " nautical miles per hour");
+    }
+}
